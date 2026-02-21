@@ -42,7 +42,6 @@ Future Improvements
 Future enhancements could include adding pagination support to scrape multiple pages, extracting full job descriptions for deeper analysis, implementing natural language processing techniques for advanced skill extraction, and building an interactive dashboard for visualization.
 
 Author
-
-Karthik K
+Karthikeyan Thirunavukkarasu 
 
 This project demonstrates practical experience in web scraping, data cleaning, and market skill analysis using Python.
