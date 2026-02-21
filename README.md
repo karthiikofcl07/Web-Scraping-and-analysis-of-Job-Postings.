@@ -1,150 +1,48 @@
-# Web-Scraping-and-analysis-of-Job-Postings.
-📌 Project Overview
+## Web Scraping and Analysis of Job Postings
+Project Overview
 
-This project focuses on scraping job listings from Indeed and analyzing in-demand skills in the job market. The scraped data includes job title, company name, location, and posting date. After collecting the data, it is cleaned and analyzed to identify the most frequently required skills.
+This project focuses on collecting and analyzing job postings from Indeed to understand current market demand for data-related roles and skills. The scraper extracts structured job information including job title, company name, location, and posted date. After collecting the data, it is cleaned, processed, and analyzed to identify the most frequently required technical skills.
 
-This project demonstrates practical knowledge in web scraping, data cleaning, and exploratory data analysis using Python.
+The objective of this project is to demonstrate practical knowledge in web scraping, data preprocessing, and exploratory data analysis using Python.
 
-🎯 Objectives
+Objectives
 
-Scrape job listings from Indeed
+The primary goal of this project is to scrape job listings from Indeed and transform unstructured web data into meaningful insights. The project extracts job title, company name, location, and posting date. After structuring the dataset, skill frequency analysis is performed to determine which technical skills are most in demand in the job market.
 
-Extract key fields:
+Tools and Technologies Used
 
-Job Title
+This project was developed using Python as the core programming language. Selenium was used to automate browser interaction and handle dynamic content loading. Pandas was used for data manipulation and cleaning. Matplotlib was used to create visualizations for skill demand analysis. WebDriver Manager was used to automatically manage the Chrome driver setup.
 
-Company Name
+Project Workflow
 
-Location
+The project begins with inspecting the Indeed job listings page using browser developer tools to identify relevant HTML elements containing job information. Selenium is then used to automate the browser and extract job title, company, location, and posted date from the listing page.
 
-Posted Date
+The extracted data is stored in a CSV file for further processing. During the data cleaning stage, duplicates are removed, missing values are handled, and text formatting is standardized. Job titles are converted to lowercase to simplify skill detection.
 
-Clean and structure the collected data
+Skill analysis is performed by defining a list of commonly required skills such as Python, SQL, Excel, Power BI, and Machine Learning. The frequency of each skill appearing in job titles is calculated and visualized using bar charts.
 
-Perform skill frequency analysis
+Project Structure
 
-Visualize the most in-demand skills
+The project directory contains the scraper script responsible for collecting data, the generated CSV file containing job listings, the analysis notebook for data processing and visualization, and the README file explaining the project.
 
-🛠 Tools & Technologies Used
+Key Insights
 
-Python
+The analysis shows that Python and SQL are among the most frequently required skills in data-related roles. Major metropolitan cities show higher concentrations of analytics and data positions. The overall skill demand trend aligns with current industry standards for data analyst and data science roles.
 
-Selenium (for dynamic web scraping)
+Ethical Considerations
 
-Pandas (data manipulation)
+This project was conducted responsibly by reviewing the website’s robots.txt file before scraping. Only a limited number of pages were accessed to avoid excessive requests. The scraper was implemented in a controlled manner without aggressive crawling.
 
-Matplotlib (data visualization)
+How to Run the Project
 
-BeautifulSoup (HTML parsing – initial testing)
+Install the required dependencies using pip. After installing the necessary libraries, run the scraper script to collect job data and generate the CSV file. The generated dataset can then be analyzed using the provided notebook or any Python environment.
 
-WebDriver Manager
+Future Improvements
 
-⚙️ Project Workflow
-1️⃣ Website Inspection
+Future enhancements could include adding pagination support to scrape multiple pages, extracting full job descriptions for deeper analysis, implementing natural language processing techniques for advanced skill extraction, and building an interactive dashboard for visualization.
 
-Inspected Indeed job listings page using browser developer tools.
-
-Identified HTML elements containing job information.
-
-2️⃣ Web Scraping
-
-Used Selenium to automate Chrome browser.
-
-Extracted:
-
-Job Title
-
-Company
-
-Location
-
-Date Posted
-
-Stored scraped data into a CSV file.
-
-3️⃣ Data Cleaning
-
-Removed duplicates
-
-Handled missing values
-
-Standardized text formatting
-
-Converted job titles to lowercase for skill detection
-
-4️⃣ Skill Analysis
-
-Defined a list of common skills:
-
-Python
-
-SQL
-
-Excel
-
-Power BI
-
-Machine Learning
-
-Counted frequency of skills appearing in job titles.
-
-5️⃣ Visualization
-
-Created bar charts to display:
-
-Most in-demand skills
-
-Job distribution by location
-
-📁 Project Structure
-web-scraping-project/
-│
-├── scraper.py
-├── indeed_jobs.csv
-├── analysis.ipynb
-└── README.md
-📈 Key Insights
-
-Python and SQL appear most frequently in data-related roles.
-
-Certain cities show higher concentration of analytics roles.
-
-Skill demand trends align with current data industry requirements.
-
-⚠️ Ethical Considerations
-
-Scraping was performed responsibly.
-
-robots.txt was reviewed before scraping.
-
-Limited number of pages were scraped.
-
-No aggressive requests were made.
-
-🚀 How to Run the Project
-
-Install dependencies:
-
-pip install selenium pandas matplotlib webdriver-manager
-
-Run scraper:
-
-python scraper.py
-
-Open CSV file for analysis or run Jupyter Notebook.
-
-💡 Future Improvements
-
-Add pagination support
-
-Extract full job descriptions
-
-Perform advanced NLP-based skill extraction
-
-Build an interactive dashboard
-
-👨‍💻 Author
+Author
 
 Karthik K
 
-If you found this project useful, feel free to connect with me on LinkedIn and check out my other repositories.
+This project demonstrates practical experience in web scraping, data cleaning, and market skill analysis using Python.
